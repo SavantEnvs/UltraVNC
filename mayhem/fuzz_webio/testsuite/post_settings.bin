@@ -1,0 +1,5 @@
+POST /settings.html HTTP/1.0
+Authorization: Basic YWRtaW46YWRtaW4=
+Content-Length: 20
+
+port=5900&mode=1234=

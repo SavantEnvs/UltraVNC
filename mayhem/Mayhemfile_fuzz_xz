@@ -1,0 +1,9 @@
+project: savantenvs/UltraVNC
+target: fuzz_xz
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_xz/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_xz
+    libfuzzer: true
+    timeout: 5

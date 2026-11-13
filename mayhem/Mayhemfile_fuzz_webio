@@ -1,0 +1,9 @@
+project: savantenvs/UltraVNC
+target: fuzz_webio
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_webio/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_webio
+    libfuzzer: true
+    timeout: 5
